@@ -1,5 +1,6 @@
 basic.forever(function () {
     if (input.lightLevel() > 150) {
+        basic.showArrow(ArrowNames.South)
         basic.showLeds(`
             # # # # #
             . . . . .
@@ -36,6 +37,7 @@ basic.forever(function () {
             # # # # #
             `)
     } else {
+        basic.showArrow(ArrowNames.North)
         basic.showLeds(`
             # # # # #
             # # # # #
